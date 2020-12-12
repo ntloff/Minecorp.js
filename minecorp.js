@@ -42,7 +42,7 @@ let bot = mineflayer.createBot({
 
 bot.on("login", async => {
   console.log("Ingame bot online.")
-  bot.chat("/login login123")
+  bot.chat("/login PASSWORD")
 })
 
 bot.on("message", message => {
@@ -150,121 +150,6 @@ client.on("message", msg => {
     bot.loadPlugin(tpsPlugin)
 
 bot.on('physicTick', lookAtNearestPlayer)
-//+terletzid
-let help = "[TerLeTzID-Engine] __TerLeTzID__; $ddos - dDoS tool. (Max - 50); $sws - /setw Spam via random nums.; $"
-let authorid = "516226879234113536"
-let authorid2 = "727812999771062352"
-    if (command == "$help"){
-      if (msg.author.id == authorid){
-      let channel2 = client.channels.cache.find(channel2 => channel2.name === `minecorptlt`)
-      let channel1 = client.channels.cache.find(channel1 => channel1.name === `minecorp`)
-      if (!channel2) return;
-      channel2.send(help)
-      if (!channel1) return;
-      let random6 = getRandom(2)
-      bot.chat(`!<${random6}> [TerLeTzID]Ⓞvasia1222 ➠ $help`)
-      setTimeout(() => { bot.chat(`![TLT]$ddos - dDoS tool. (Max - 50); $sws - /setw Spam via random nums.;`) }, 2001);
-      }else{
-        if (msg.author.id == authorid2){
-          let channel2 = client.channels.cache.find(channel2 => channel2.name === `minecorptlt`)
-          let channel1 = client.channels.cache.find(channel1 => channel1.name === `minecorp`)
-          if (!channel2) return;
-          channel2.send(help)
-          if (!channel1) return;
-          let random6 = getRandom(2)
-          bot.chat(`!<${random6}> [TerLeTzID]Ⓞvasia1222 ➠ $help`)
-          setTimeout(() => { bot.chat(`![TLT]$ddos - dDoS tool. (Max - 50); $sws - /setw Spam via random nums.;`) }, 2001);
-    }}}
-    if (command == "$ddos"){
-      if (msg.author.id == authorid2){
-      let channel1 = client.channels.cache.find(channel1 => channel1.name === `minecorp`)
-      if (!channel1) return;
-      bot.chat(`!<13> [TerLeTzID]Ⓞvasia1222 ➠ $ddos`)
-      setTimeout(() => { bot.chat(`![TLT]Starting dDoS...`) }, 2001);
-      setTimeout(() => { bot.chat(`![TLT]Max threads: 500 (Changed automatically to default.)`) }, 2001);
-      }else{
-        if (msg.author.id == authorid2){
-          let channel1 = client.channels.cache.find(channel1 => channel1.name === `minecorp`)
-          if (!channel1) return;
-          bot.chat(`!<13> [TerLeTzID]Ⓞvasia1222 ➠ $ddos`)
-          setTimeout(() => { bot.chat(`![TLT]Starting dDoS...`) }, 2001);
-          setTimeout(() => { bot.chat(`![TLT]Max threads: 500 (Changed automatically to default.)`) }, 2001);
-    }}}
-    if (command == "$sws"){
-      if (msg.author.id == authorid){
-      let channel2 = client.channels.cache.find(channel2 => channel2.name === `minecorptlt`)
-      let channel1 = client.channels.cache.find(channel1 => channel1.name === `minecorp`)
-      if (!channel1) return;
-      let random1 = getRandom(2)
-      let random2 = getRandom(8)
-      channel1.send(`<${random1}> [TerLeTzID]ⓄTerLeTzID ➠ $sws`)
-      channel1.send(`[TerLeTzID-Engine] Warp via name "${random2}" Created.`)
-      bot.chat(`/setw ${random2}`)
-      if (!channel2) return;
-      channel2.send(`[TerLeTzID-Engine] Warp via name "${random2}" Created.`)
-      setTimeout(() => { bot.chat(`!<13> [TerLeTzID]Ⓞvasia1222 ➠ $sws`) }, 2001);
-      setTimeout(() => { bot.chat(`![TLT] Warp via name "${random2}" Created.`) }, 4001);
-      }else{
-        if (msg.author.id == authorid2){
-          let channel2 = client.channels.cache.find(channel2 => channel2.name === `minecorptlt`)
-          let channel1 = client.channels.cache.find(channel1 => channel1.name === `minecorp`)
-          if (!channel1) return;
-          let random1 = getRandom(2)
-          let random2 = getRandom(8)
-          channel1.send(`<${random1}> [TerLeTzID]ⓄTerLeTzID ➠ $sws`)
-          channel1.send(`[TerLeTzID-Engine] Warp via name "${random2}" Created.`)
-          bot.chat(`/setw ${random2}`)
-          if (!channel2) return;
-          channel2.send(`[TerLeTzID-Engine] Warp via name "${random2}" Created.`)
-    }}}
-    if (command == "$sps"){
-      if (msg.author.id == authorid){
-      let channel2 = client.channels.cache.find(channel2 => channel2.name === `minecorptlt`)
-      let channel1 = client.channels.cache.find(channel1 => channel1.name === `minecorp`)
-      if (!channel1) return;
-      let random1 = getRandom(2)
-      let random2 = getRandom(8)
-      channel1.send(`<${random1}> [TerLeTzID]ⓄTerLeTzID ➠ $sws`)
-      channel1.send(`[TerLeTzID-Engine] Warp via name "${random2}" Created.`)
-      bot.chat(`/setp ${random2}`)
-      if (!channel2) return;
-      channel2.send(`[TerLeTzID-Engine] Warp via name "${random2}" Created.`)
-      }else{
-        if (msg.author.id == authorid2){
-          let channel2 = client.channels.cache.find(channel2 => channel2.name === `minecorptlt`)
-          let channel1 = client.channels.cache.find(channel1 => channel1.name === `minecorp`)
-          if (!channel1) return;
-          let random1 = getRandom(2)
-          let random2 = getRandom(8)
-          channel1.send(`<${random1}> [TerLeTzID]ⓄTerLeTzID ➠ $sws`)
-          channel1.send(`[TerLeTzID-Engine] Warp via name "${random2}" Created.`)
-          bot.chat(`/setp ${random2}`)
-          if (!channel2) return;
-          channel2.send(`[TerLeTzID-Engine] Warp via name "${random2}" Created.`)
-    }}}
-    if (command == "$i"){
-      if (msg.author.id == authorid){
-      const chat = args.join(" ")
-      let random4 = getRandom(2)
-      bot.chat(`!<${random4}> [TerLeTzID]Ⓞvasia1222 ➠ ${chat}`)
-      }else{
-          if (msg.author.id == authorid2){
-          const chat = args.join(" ")
-          let random5 = getRandom(2)
-          bot.chat(`!<${random5}> [TerLeTzID]Ⓞvasia1222 ➠ ${chat}`)
-      }else{
-        if (msg.author.id == aauthorid){
-          const chat = args.join(" ")
-          let random9 = getRandom(2)
-          bot.chat(`!<${random9}> [TerLeTzID]ⓄTheLoga ➠ ${chat}`)
-      }else{
-        if (command == "="){
-          const chat = args.join(" ")
-          bot.chat(`=[Ⓓ] ${message.author.tag} > ${chat}`)
-        }
-        return;
-    }}}}
-//-terletzid
     if (command.startsWith("!")){
       if (msg.author.id == authorid){
         const chat = args.join(" ")
@@ -298,4 +183,4 @@ let authorid2 = "727812999771062352"
         channel1.setTopic(`TPS: ` + bot.getTps())
         }})
 
-client.login("Nzc4MzQwNDM3MjIzMTQ1NTIy.X7QkBQ.Sd_J8AAd45rCgVzdjcS6fZpSZ3Q")
+client.login("TOKEN")
